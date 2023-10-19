@@ -1,0 +1,119 @@
+import { Meta, Typeset } from '@storybook/addon-docs'
+
+<Meta title="Foundations/v1/Typography-Sans" />
+
+export const typography = {
+	font: 'sans',
+	weight: {
+		light: '300',
+		regular: '400',
+		semiBold: '600',
+		bold: '700',
+	},
+	size: {
+		h1: 52,
+		h2: 48,
+		h3: 40,
+		h4: 32,
+		h5: 30,
+		h6: 26,
+		h7: 18,
+		h8: 14,
+		h9: 12,
+		h10: 9,
+	},
+}
+
+export const SampleText = 'Hello Lenskart. This is a test message!'
+
+# Sans Typography
+
+**Font:** Sans
+
+**Font Size:** var(--fs-XX), XX is Font Numbers
+
+**Font Weights:** var(--fw-light)
+
+<Typeset
+	fontSizes={[
+		Number(typography.size.h1),
+		Number(typography.size.h2),
+		Number(typography.size.h3),
+		Number(typography.size.h4),
+		Number(typography.size.h5),
+		Number(typography.size.h6),
+		Number(typography.size.h7),
+		Number(typography.size.h8),
+		Number(typography.size.h9),
+		Number(typography.size.h10),
+	]}
+	fontWeight={typography.weight.light}
+	sampleText={SampleText}
+	fontFamily={typography.font}
+/>
+
+**Font Size:** var(--fs-XX), XX is Font Numbers
+
+**Font Weights:** var(--fw-regular)
+
+<Typeset
+	fontSizes={[
+		Number(typography.size.h1),
+		Number(typography.size.h2),
+		Number(typography.size.h3),
+		Number(typography.size.h4),
+		Number(typography.size.h5),
+		Number(typography.size.h6),
+		Number(typography.size.h7),
+		Number(typography.size.h8),
+		Number(typography.size.h9),
+		Number(typography.size.h10),
+	]}
+	fontWeight={typography.weight.regular}
+	sampleText={SampleText}
+	fontFamily={typography.font}
+/>
+
+**Font Size:** var(--fs-XX), XX is Font Numbers
+
+**Font Weights:** var(--fw-semi-bold)
+
+<Typeset
+	fontSizes={[
+		Number(typography.size.h1),
+		Number(typography.size.h2),
+		Number(typography.size.h3),
+		Number(typography.size.h4),
+		Number(typography.size.h5),
+		Number(typography.size.h6),
+		Number(typography.size.h7),
+		Number(typography.size.h8),
+		Number(typography.size.h9),
+		Number(typography.size.h10),
+	]}
+	fontWeight={typography.weight.semiBold}
+	sampleText={SampleText}
+	fontFamily={typography.font}
+/>
+
+**Font Size:** var(--fs-XX), XX is Font Numbers
+
+**Font Weights:** var(--fw-bold)
+
+<Typeset
+	fontSizes={[
+		Number(typography.size.h1),
+		Number(typography.size.h2),
+		Number(typography.size.h3),
+		Number(typography.size.h4),
+		Number(typography.size.h5),
+		Number(typography.size.h6),
+		Number(typography.size.h7),
+		Number(typography.size.h8),
+		Number(typography.size.h9),
+		Number(typography.size.h10),
+	]}
+	fontWeight={typography.weight.bold}
+	sampleText={SampleText}
+	fontFamily={typography.font}
+/>
